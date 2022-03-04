@@ -29,11 +29,11 @@
     </video>
     
     <script>
+      /*setTimeout(function() {
+      }, 500);*/
       setTimeout(function() {
+        document.getElementsByTagName('html')[0].click()
        document.querySelector('#popupAutoplayVideo').muted = false;
-      }, 500);
-      setTimeout(function() {
-       document.querySelector('#popupAutoplayVideo').play();
       }, 500);
 
     </script>
