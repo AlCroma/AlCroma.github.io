@@ -26,15 +26,15 @@
   </head>
 
   <body>
-    <div id="showDynamicNumber">5000</div>
+    <div id="showDynamicNumber"></div>
     
     <script>
       setTimeout(function() {
-       var x = Math.floor((Math.random() * 100) + 1);
+       var x = Math.floor(Math.random() * 9000000000) + 1000000000;
        var element = document.querySelector('#showDynamicNumber');
        element.innerText = x;
        //console.log(x);
-      }, 500);
+      }, 100);
 
     </script>
   </body>
