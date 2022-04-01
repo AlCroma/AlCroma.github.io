@@ -24,19 +24,15 @@
   </head>
 
   <body>
-    <video height="256" loop autoplay controls muted id="popupAutoplayVideo">
-      <source type="video/mp4" src="https://videos.whatfix.com/826c1500-05f1-11ea-9aee-04013d24cf02/SMARTGetHelpPreviewUpdatedMarch1.mp4" />
-    </video>
+    <div id="showDynamicNumber">5000</div>
     
-    <!--<script>
-      /*setTimeout(function() {
-      }, 500);*/
+    <script>
       setTimeout(function() {
-        document.getElementsByTagName('html')[0].click()
-       document.querySelector('#popupAutoplayVideo').muted = false;
+       var x = document.querySelector('#showDynamicNumber').innerText;
+       console.log(x);
       }, 1000);
 
-    </script>-->
+    </script>
   </body>
 
 </html>
