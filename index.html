@@ -17,6 +17,8 @@
     </body>
 </html>-->
 
+
+
 <html>
 
   <head>
@@ -28,7 +30,9 @@
     
     <script>
       setTimeout(function() {
-       var x = document.querySelector('#showDynamicNumber').innerText;
+       var x = Math.floor((Math.random() * 100) + 1);
+       var element = document.querySelector('#showDynamicNumber');
+       element.innerText = x;
        console.log(x);
       }, 1000);
 
